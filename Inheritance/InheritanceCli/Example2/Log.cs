@@ -2,7 +2,7 @@
 {
     class Log
     {
-        private Dictionary<DateTime, string> _log = new Dictionary<DateTime, string>();
+        //private Dictionary<DateTime, string> _log = new Dictionary<DateTime, string>();
 
         /// <summary>
         /// Voegt een entry toe aan de Dictionary _log
@@ -10,7 +10,7 @@
         /// <param name="message"></param>
         public virtual void Write(string message)
         {
-            _log.Add(DateTime.Now, message);
+            LogDataClass.Logs.Add(DateTime.Now, message);
         }
 
         /// <summary>
@@ -18,7 +18,7 @@
         /// </summary>
         public void DisplayLog()
         {
-            foreach (var item in _log)
+            foreach (var item in LogDataClass.Logs)
             {
                 Console.WriteLine($"{item.Key}: {item.Value}");
             }
