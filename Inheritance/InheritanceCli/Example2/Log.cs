@@ -13,15 +13,17 @@
             LogDataClass.Logs.Add(DateTime.Now, message);
         }
 
-        /// <summary>
-        /// Toont de volledige log(Dictionary)
-        /// </summary>
-        public void DisplayLog()
-        {
-            foreach (var item in LogDataClass.Logs)
-            {
-                Console.WriteLine($"{item.Key}: {item.Value}");
-            }
-        }
+        ///// <summary>
+        ///// Toont de volledige log(Dictionary)
+        ///// </summary>
+        //public void DisplayLog()
+        //{
+        //    foreach (var item in LogDataClass.Logs)
+        //    {
+        //        Console.WriteLine($"{item.Key}: {item.Value}");
+        //    }
+        //}
+
+        public abstract void DisplayLog();
     }
 }
