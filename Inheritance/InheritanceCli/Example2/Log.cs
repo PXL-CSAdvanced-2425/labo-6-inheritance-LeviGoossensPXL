@@ -1,6 +1,6 @@
 ﻿namespace InheritanceCli.Example2
 {
-    class Log
+    abstract class Log
     {
         //private Dictionary<DateTime, string> _log = new Dictionary<DateTime, string>();
 

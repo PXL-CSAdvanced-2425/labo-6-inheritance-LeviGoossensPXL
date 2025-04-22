@@ -6,8 +6,6 @@ namespace InheritanceCli
     {
         static void Main(string[] args)
         {
-            Log baseLog = new Log();
-            baseLog.Write("message1");
 
             ActivityLog activityLog = new ActivityLog();
             activityLog.Write("message2");
@@ -15,8 +13,7 @@ namespace InheritanceCli
             ErrorLog errorLog = new ErrorLog();
             errorLog.Write("message3");
 
-            baseLog.DisplayLog();
-            //activityLog.DisplayLog();
+            activityLog.DisplayLog();
             //errorLog.DisplayLog();
         }
     }
