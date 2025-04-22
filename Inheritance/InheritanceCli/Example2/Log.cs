@@ -8,7 +8,7 @@
         /// Voegt een entry toe aan de Dictionary _log
         /// </summary>
         /// <param name="message"></param>
-        public void Write(string message)
+        public virtual void Write(string message)
         {
             _log.Add(DateTime.Now, message);
         }
