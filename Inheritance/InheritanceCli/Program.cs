@@ -7,10 +7,10 @@ namespace InheritanceCli
         static void Main(string[] args)
         {
 
-            ActivityLog activityLog = new ActivityLog();
+            ActivityLog activityLog = new ActivityLog("log1.txt");
             activityLog.Write("message2");
 
-            ErrorLog errorLog = new ErrorLog();
+            ErrorLog errorLog = new ErrorLog("log1.txt");
             errorLog.Write("message3");
 
             activityLog.DisplayLog();

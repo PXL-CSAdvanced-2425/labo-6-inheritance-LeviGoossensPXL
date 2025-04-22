@@ -2,6 +2,9 @@
 {
     class ErrorLog : Log
     {
+        public ErrorLog(string fileName) : base(fileName)
+        {
+        }
 
         public override void Write(string message)
         {
